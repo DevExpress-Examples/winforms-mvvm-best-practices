@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8983F6CC-9B70-4083-9152-A7D9B9BAD06C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>DxSample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Data.v15.1" />
+    <Reference Include="DevExpress.Printing.v15.1.Core" />
+    <Reference Include="DevExpress.Utils.v15.1" />
+    <Reference Include="DevExpress.XtraEditors.v15.1" />
+    <Reference Include="DevExpress.XtraLayout.v15.1" />
+    <Reference Include="DevExpress.XtraNavBar.v15.1" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Reference Include="DevExpress.Utils.v15.1" />
+    <Reference Include="DevExpress.XtraEditors.v15.1" />
+    <Reference Include="System.Core" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="Accessibility" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml" />
+    <Reference Include="DevExpress.XtraBars.v15.1" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="DevExpress.Mvvm.v15.1" />
+    <Reference Include="DevExpress.Data.v15.1" />
+    <Reference Include="DevExpress.XtraTreeList.v15.1" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1" />
+    <Reference Include="DevExpress.RichEdit.v15.1.Core" />
+    <Reference Include="DevExpress.Office.v15.1.Core" />
+    <Reference Include="DevExpress.XtraLayout.v15.1" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SimpleBehaviors\ConfirmationBehaviorSeparateClassUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleBehaviors\ConfirmationBehaviorSeparateClassUserControl.Designer.vb">
+      <DependentUpon>ConfirmationBehaviorSeparateClassUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleBehaviors\ConfirmationBehaviorGenericConfirmationBehaviorClassUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleBehaviors\ConfirmationBehaviorGenericConfirmationBehaviorClassUserControl.Designer.vb">
+      <DependentUpon>ConfirmationBehaviorGenericConfirmationBehaviorClassUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleBehaviors\ConfirmationBehaviorFluentAPIUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleBehaviors\ConfirmationBehaviorFluentAPIUserControl.Designer.vb">
+      <DependentUpon>ConfirmationBehaviorFluentAPIUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventToCommandBehavior\UsingCommandsWithThirdPartyControlsUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventToCommandBehavior\UsingCommandsWithThirdPartyControlsUserControl.Designer.vb">
+      <DependentUpon>UsingCommandsWithThirdPartyControlsUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventToCommandBehavior\UsingCommandsWithThirdPartyControlsFluentAPIUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventToCommandBehavior\UsingCommandsWithThirdPartyControlsFluentAPIUserControl.Designer.vb">
+      <DependentUpon>UsingCommandsWithThirdPartyControlsFluentAPIUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventToCommandBehaviorParametersConverters\PassingParametersToCommandsUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventToCommandBehaviorParametersConverters\PassingParametersToCommandsUserControl.Designer.vb">
+      <DependentUpon>PassingParametersToCommandsUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventToCommandBehaviorParametersConverters\PassingEventArgumentsToCommandsASISUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventToCommandBehaviorParametersConverters\PassingEventArgumentsToCommandsASISUserControl.Designer.vb">
+      <DependentUpon>PassingEventArgumentsToCommandsASISUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventToCommandBehaviorParametersConverters\PassingEventArgumentsToCommandsViaConverterUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventToCommandBehaviorParametersConverters\PassingEventArgumentsToCommandsViaConverterUserControl.Designer.vb">
+      <DependentUpon>PassingEventArgumentsToCommandsViaConverterUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOBindableProperties\StandardDataBindingUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOBindableProperties\StandardDataBindingUserControl.Designer.vb">
+      <DependentUpon>StandardDataBindingUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOBindableProperties\DataBindingViaMVVMContextUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOBindableProperties\DataBindingViaMVVMContextUserControl.Designer.vb">
+      <DependentUpon>DataBindingViaMVVMContextUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOBindableProperties\DataBindingViaMVVMContextFluentAPIUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOBindableProperties\DataBindingViaMVVMContextFluentAPIUserControl.Designer.vb">
+      <DependentUpon>DataBindingViaMVVMContextFluentAPIUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCODependencies\SimpleDependenciesUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCODependencies\SimpleDependenciesUserControl.Designer.vb">
+      <DependentUpon>SimpleDependenciesUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCODependencies\PropertyChangedNotificationsUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCODependencies\PropertyChangedNotificationsUserControl.Designer.vb">
+      <DependentUpon>PropertyChangedNotificationsUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UITriggers\SimpleUITriggerUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UITriggers\SimpleUITriggerUserControl.Designer.vb">
+      <DependentUpon>SimpleUITriggerUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UITriggers\SimpleUITriggerFluentAPIUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UITriggers\SimpleUITriggerFluentAPIUserControl.Designer.vb">
+      <DependentUpon>SimpleUITriggerFluentAPIUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BindingToLegacyViewModels\DataBindingViaMVVMContextUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BindingToLegacyViewModels\DataBindingViaMVVMContextUserControl.Designer.vb">
+      <DependentUpon>DataBindingViaMVVMContextUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BindingToLegacyViewModels\DataBindingViaMVVMContextFluentAPIUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BindingToLegacyViewModels\DataBindingViaMVVMContextFluentAPIUserControl.Designer.vb">
+      <DependentUpon>DataBindingViaMVVMContextFluentAPIUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataBindingCapabilitiesBindingPath\DataBindingToNestedPropertiesUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataBindingCapabilitiesBindingPath\DataBindingToNestedPropertiesUserControl.Designer.vb">
+      <DependentUpon>DataBindingToNestedPropertiesUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataBindingCapabilitiesBindingPath\DataBindingToNestedPropertiesFluentAPIUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataBindingCapabilitiesBindingPath\DataBindingToNestedPropertiesFluentAPIUserControl.Designer.vb">
+      <DependentUpon>DataBindingToNestedPropertiesFluentAPIUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataBindingCapabilitiesConverters\DataBindingViaDefaultConvertersFluentAPIUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataBindingCapabilitiesConverters\DataBindingViaDefaultConvertersFluentAPIUserControl.Designer.vb">
+      <DependentUpon>DataBindingViaDefaultConvertersFluentAPIUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelegateCommands\SimpleCommandUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DelegateCommands\SimpleCommandUserControl.Designer.vb">
+      <DependentUpon>SimpleCommandUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelegateCommands\CommandWithCanExecuteConditionUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DelegateCommands\CommandWithCanExecuteConditionUserControl.Designer.vb">
+      <DependentUpon>CommandWithCanExecuteConditionUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelegateCommands\ParameterizedCommandUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DelegateCommands\ParameterizedCommandUserControl.Designer.vb">
+      <DependentUpon>ParameterizedCommandUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelegateCommands\ParameterizedCommandWithCanExecuteConditionUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DelegateCommands\ParameterizedCommandWithCanExecuteConditionUserControl.Designer.vb">
+      <DependentUpon>ParameterizedCommandWithCanExecuteConditionUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOCommands\SimpleCommandUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOCommands\SimpleCommandUserControl.Designer.vb">
+      <DependentUpon>SimpleCommandUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOCommands\CommandWithCanExecuteConditionUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOCommands\CommandWithCanExecuteConditionUserControl.Designer.vb">
+      <DependentUpon>CommandWithCanExecuteConditionUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOCommands\ParameterizedCommandUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOCommands\ParameterizedCommandUserControl.Designer.vb">
+      <DependentUpon>ParameterizedCommandUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOCommands\ParameterizedCommandWithCanExecuteConditionUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOCommands\ParameterizedCommandWithCanExecuteConditionUserControl.Designer.vb">
+      <DependentUpon>ParameterizedCommandWithCanExecuteConditionUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOCommands\FluentAPIForCommandsUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOCommands\FluentAPIForCommandsUserControl.Designer.vb">
+      <DependentUpon>FluentAPIForCommandsUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOAsynchronousCommands\SimpleCommandUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOAsynchronousCommands\SimpleCommandUserControl.Designer.vb">
+      <DependentUpon>SimpleCommandUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOAsynchronousCommands\SimpleCommandWithCancellationUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOAsynchronousCommands\SimpleCommandWithCancellationUserControl.Designer.vb">
+      <DependentUpon>SimpleCommandWithCancellationUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POCOAsynchronousCommands\FluentAPIForCommandsUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POCOAsynchronousCommands\FluentAPIForCommandsUserControl.Designer.vb">
+      <DependentUpon>FluentAPIForCommandsUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LegacyCommands\SimpleCommandUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LegacyCommands\SimpleCommandUserControl.Designer.vb">
+      <DependentUpon>SimpleCommandUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LegacyCommands\ParameterizedCommandUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LegacyCommands\ParameterizedCommandUserControl.Designer.vb">
+      <DependentUpon>ParameterizedCommandUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Messenger\SendingAndReceivingMessagesUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Messenger\SendingAndReceivingMessagesUserControl.Designer.vb">
+      <DependentUpon>SendingAndReceivingMessagesUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Messenger\SendingAndReceivingCustomMessagesUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Messenger\SendingAndReceivingCustomMessagesUserControl.Designer.vb">
+      <DependentUpon>SendingAndReceivingCustomMessagesUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Messenger\SendingAndReceivingTokenizedMessagesUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Messenger\SendingAndReceivingTokenizedMessagesUserControl.Designer.vb">
+      <DependentUpon>SendingAndReceivingTokenizedMessagesUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxServices\MessageBoxServiceUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageBoxServices\MessageBoxServiceUserControl.Designer.vb">
+      <DependentUpon>MessageBoxServiceUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxServices\XtraMessageBoxServiceUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageBoxServices\XtraMessageBoxServiceUserControl.Designer.vb">
+      <DependentUpon>XtraMessageBoxServiceUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxServices\FlyoutMessageBoxServiceUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageBoxServices\FlyoutMessageBoxServiceUserControl.Designer.vb">
+      <DependentUpon>FlyoutMessageBoxServiceUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogServices\XtraDialogServiceUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogServices\XtraDialogServiceUserControl.Designer.vb">
+      <DependentUpon>XtraDialogServiceUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogServices\FlyoutDialogServiceUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogServices\FlyoutDialogServiceUserControl.Designer.vb">
+      <DependentUpon>FlyoutDialogServiceUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogServices\RibbonDialogServiceUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogServices\RibbonDialogServiceUserControl.Designer.vb">
+      <DependentUpon>RibbonDialogServiceUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServices\CustomServiceUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomServices\CustomServiceUserControl.Designer.vb">
+      <DependentUpon>CustomServiceUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServices\CustomServiceWithKeyUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomServices\CustomServiceWithKeyUserControl.Designer.vb">
+      <DependentUpon>CustomServiceWithKeyUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

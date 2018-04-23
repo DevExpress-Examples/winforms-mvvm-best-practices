@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6D2FBC41-4043-4046-81E9-70F154E20421}") = "DxSample", "DxSample.vbproj", "{8983F6CC-9B70-4083-9152-A7D9B9BAD06C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8983F6CC-9B70-4083-9152-A7D9B9BAD06C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8983F6CC-9B70-4083-9152-A7D9B9BAD06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8983F6CC-9B70-4083-9152-A7D9B9BAD06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8983F6CC-9B70-4083-9152-A7D9B9BAD06C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
