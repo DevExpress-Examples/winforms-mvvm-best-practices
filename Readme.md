@@ -4,11 +4,18 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# MVVM Best Practices
+# WinForms MVVM Best Practices
+
+This is a complete MVVM Best Practices demo available from the DevExpress WinForms Demo Center. The solution includes various sections; each section contains several simple examples, which cover a certain MMVM topic.
 
 
-<p>This example contains the complete MVVM Best Practices demo available from the DevExpress WinForms Demo Center. The solution is divided into separate sections; each section contains several simple examples, which cover a certain topic. Each example has a detailed description in <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument113955">MVVM help articles</a>. Refer to these topics if you have any difficulties.</p>
+## Documentation
 
-<br/>
+* [WinForms MVVM](https://docs.devexpress.com/WindowsForms/113955/build-an-application/winforms-mvvm)
+* [MVVM Tutorials](https://docs.devexpress.com/WindowsForms/114101/build-an-application/winforms-mvvm/tutorials)
 
+
+## See Also
+
+* [Rock Your WinForms Apps with DevExpress MVVM (YouTube Video)](https://www.youtube.com/watch?v=mTwD7dCcaCo)
 
