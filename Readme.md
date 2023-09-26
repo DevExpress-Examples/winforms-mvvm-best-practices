@@ -6,7 +6,7 @@
 
 # WinForms MVVM Best Practices
 
-This is a complete MVVM Best Practices demo available from the DevExpress WinForms Demo Center. The solution includes various sections; each section contains several simple examples, which cover a certain MMVM topic.
+This is a complete MVVM Best Practices demo available from the DevExpress WinForms Demo Center. The solution includes various sections; each section contains several simple examples, which cover a certain MVVM topic.
 
 
 ## Documentation
